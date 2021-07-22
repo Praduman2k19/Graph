@@ -1,0 +1,25 @@
+                    GRAPH
+        ----------------------------------
+
+   TYPES 
+------------
+
+1. Depending on direction
+    1. Undirected graph 
+    2. Directed Graph 
+        1. Cyclic
+        2. Acyclic
+
+2. Depending on Labelling
+    1. Unlabelled graph 
+    2. Vertex Labelled graph
+    3. Edge Labelled graph
+
+3. Depending on weights
+    1. weighted graph
+    2. unweighted graph
+
+4. Depending on Sparsity
+    1. Spark graph  
+    2. dence graph 
+
