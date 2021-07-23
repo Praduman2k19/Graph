@@ -87,18 +87,26 @@
 	},
 	"headerfile list":{
 		"scope":"cpp",
-		"prefix": "#include <list",
+		"prefix": "#include <list>",
 		"body": [
 			"#include <list>",
 		],
 	},
 	"headerfile vector":{
 		"scope":"cpp",
-		"prefix": "#include <vector",
+		"prefix": "#include <vector>",
 		"body": [
 			"#include <vector>",
 		],
+	},
+	"headerfile map":{
+		"scope":"cpp",
+		"prefix": "#include <map>",
+		"body": [
+			"#include <map>",
+		],
 	}
+	
 	// "input from file":{
 	// 	"scope":"cpp",
 	// 	"prefix": "input",

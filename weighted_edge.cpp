@@ -16,9 +16,8 @@ class Graph{
     void print(){
         for(auto p :l){
             string city=p.first;
-            list<pair<string,int>>nbrs=p.second;
             cout<<city<<"->";
-            for(auto nbr:nbrs)
+            for(auto nbr:p.second)
                 cout<<"("<<nbr.first<<" "<<nbr.second<<"), ";
             cout<<endl;
         }
