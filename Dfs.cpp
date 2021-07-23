@@ -1,6 +1,6 @@
 #include<iostream>
 #include <list>
-#include <queue>
+#include <stack>
 #include <map>
 using namespace std;
 template<typename T>
@@ -11,25 +11,25 @@ class Graph{
         l[x].push_back(y);
         l[y].push_back(x);
     }
-    void bfs(T src)
-    {
-        cout<<"Bfs : ";
-        map<T,bool>visited;
-        queue<T>q;
 
-        q.push(src);
+    void dfs_helper(T src , map<T,bool> &visited)
+    {
+        cout<<src<<" ";
         visited[src]=true;
-        while(!q.empty()){
-            T node=q.front();
-            q.pop();
-            cout<<node<<" ";
-            for(auto nbr:l[node]){
-                if(visited[nbr]==false){
-                    q.push(nbr);
-                    visited[nbr]=true;
-                }
+        for(auto nbr : l[src]){
+            if(!visited[nbr]){
+                dfs_helper(nbr,visited);
             }
         }
+    }
+    void dfs(T src)
+    {
+        cout<<"Dfs : ";
+        map<T,bool>visited;
+         for(auto p:l){
+            visited[p.first]=false;
+         }
+            dfs_helper(src,visited);
     }
     void print(){
         cout<<"Graph : "<<endl;
@@ -49,7 +49,8 @@ int main()
     g.addEdge(2,3);
     g.addEdge(3,4);
     g.addEdge(4,5);
+
     g.print();
-    g.bfs(0);
+    g.dfs(0);
     return 0;
 }
