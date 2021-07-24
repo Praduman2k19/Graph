@@ -14,7 +14,7 @@ class Graph{
     void bfs(T src)
     {
         cout<<"Dfs : ";
-        map<T,bool>visited;
+        map<T,bool>visited ;
         stack<T>s;
 
         s.push(src);
