@@ -105,6 +105,21 @@
 		"body": [
 			"#include <map>",
 		],
+	},
+	"headerfile stack":{
+		"scope":"cpp",
+		"prefix": "#include <stack>",
+		"body": [
+			"#include <stack>",
+		],
+	}
+	,
+	"headerfile queue":{
+		"scope":"cpp",
+		"prefix": "#include <queue>",
+		"body": [
+			"#include <queue>",
+		],
 	}
 	
 	// "input from file":{
@@ -112,7 +127,7 @@
 	// 	"prefix": "input",
 	// 	"body": [
 	// 		"#ifndef ONLINE_JUDGE"
-	// 		"freopen("input.txt", "r", stdin);"
+	//		 "freopen("input.txt", "r", stdin);"
 	// 		"freopen("output.txt", "w", stdout);"
 	// 		"#endif"
 	// 	],
